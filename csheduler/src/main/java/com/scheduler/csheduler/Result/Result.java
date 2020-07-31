@@ -44,7 +44,7 @@ public class Result {
      */
     public static Result success() {
         Result result = new Result();
-        result.setCode(0);
+        result.setCode(200);
         result.setMsg("处理成功");
         return result;
     }
@@ -55,7 +55,7 @@ public class Result {
      */
     public static Result error() {
         Result result = new Result();
-        result.setCode(1);
+        result.setCode(500);
         result.setMsg("处理失败");
         return result;
     }

@@ -1,4 +1,4 @@
-package com.scheduler.csheduler.config;
+package com.scheduler.csheduler.Config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -9,7 +9,6 @@ public class CorsConfig implements WebMvcConfigurer {
 
     /**
      * 页面跨域访问Controller过滤
-     *
      * @return
      */
     @Override

@@ -4,11 +4,11 @@ import java.sql.Timestamp;
 
 public class Edge {
     private Integer id;
-    private Integer dagId;
-    private Integer startNode;
-    private Integer endNode;
-    private Timestamp createTime;
-    private Timestamp lastUpdateTime;
+    private Integer dag_id;
+    private Integer start_node;
+    private Integer end_node;
+    private Timestamp create_time;
+    private Timestamp last_update_time;
 
     public Integer getId() {
         return id;
@@ -18,43 +18,43 @@ public class Edge {
         this.id = id;
     }
 
-    public Integer getDagId() {
-        return dagId;
+    public Integer getDag_id() {
+        return dag_id;
     }
 
-    public void setDagId(Integer dagId) {
-        this.dagId = dagId;
+    public void setDag_id(Integer dag_id) {
+        this.dag_id = dag_id;
     }
 
-    public Integer getStartNode() {
-        return startNode;
+    public Integer getStart_node() {
+        return start_node;
     }
 
-    public void setStartNode(Integer startNode) {
-        this.startNode = startNode;
+    public void setStart_node(Integer start_node) {
+        this.start_node = start_node;
     }
 
-    public Integer getEndNode() {
-        return endNode;
+    public Integer getEnd_node() {
+        return end_node;
     }
 
-    public void setEndNode(Integer endNode) {
-        this.endNode = endNode;
+    public void setEnd_node(Integer end_node) {
+        this.end_node = end_node;
     }
 
-    public Timestamp getCreateTime() {
-        return createTime;
+    public Timestamp getCreate_time() {
+        return create_time;
     }
 
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
+    public void setCreate_time(Timestamp create_time) {
+        this.create_time = create_time;
     }
 
-    public Timestamp getLastUpdateTime() {
-        return lastUpdateTime;
+    public Timestamp getLast_update_time() {
+        return last_update_time;
     }
 
-    public void setLastUpdateTime(Timestamp lastUpdateTime) {
-        this.lastUpdateTime = lastUpdateTime;
+    public void setLast_update_time(Timestamp last_update_time) {
+        this.last_update_time = last_update_time;
     }
 }

@@ -1,14 +1,16 @@
 package com.scheduler.csheduler.bean;
 
+import lombok.Data;
+
 import java.sql.Timestamp;
 
 public class Dag {
     private Integer id;
     private String describ;
-    private Integer roomId;
+    private Integer room_id;
     private String owner;
-    private Timestamp createTime;
-    private Timestamp lasUpdateTime;
+    private Timestamp create_time;
+    private Timestamp last_update_time;
 
     public Integer getId() {
         return id;
@@ -22,16 +24,16 @@ public class Dag {
         return describ;
     }
 
-    public void setDescrib(String describ) {
+    public void setDescribe(String describ) {
         this.describ = describ;
     }
 
-    public Integer getRoomId() {
-        return roomId;
+    public Integer getRoom_id() {
+        return room_id;
     }
 
-    public void setRoomId(Integer roomId) {
-        this.roomId = roomId;
+    public void setRoom_id(Integer room_id) {
+        this.room_id = room_id;
     }
 
     public String getOwner() {
@@ -42,19 +44,19 @@ public class Dag {
         this.owner = owner;
     }
 
-    public Timestamp getCreateTime() {
-        return createTime;
+    public Timestamp getCreate_time() {
+        return create_time;
     }
 
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
+    public void setCreate_time(Timestamp create_time) {
+        this.create_time = create_time;
     }
 
-    public Timestamp getLasUpdateTime() {
-        return lasUpdateTime;
+    public Timestamp getLast_update_time() {
+        return last_update_time;
     }
 
-    public void setLasUpdateTime(Timestamp lasUpdateTime) {
-        this.lasUpdateTime = lasUpdateTime;
+    public void setLast_update_time(Timestamp last_update_time) {
+        this.last_update_time = last_update_time;
     }
 }
