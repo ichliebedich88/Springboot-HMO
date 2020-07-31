@@ -7,20 +7,12 @@ public class Resource {
     private String name;
     private String type;
     private String brand;
-    private Integer roomId;
-    private Integer dagId;
-    private Integer taskId;
+    private Integer room_id;
+    private Integer dag_id;
+    private Integer task_id;
     private Integer status;
-    private Timestamp createTime;
-    private Timestamp lastUpdateTime;
-
-    public Integer getTaskId() {
-        return taskId;
-    }
-
-    public void setTaskId(Integer taskId) {
-        this.taskId = taskId;
-    }
+    private Timestamp create_time;
+    private Timestamp last_update_time;
 
     public Integer getId() {
         return id;
@@ -54,22 +46,29 @@ public class Resource {
         this.brand = brand;
     }
 
-    public Integer getRoomId() {
-        return roomId;
+    public Integer getRoom_id() {
+        return room_id;
     }
 
-    public void setRoomId(Integer roomId) {
-        this.roomId = roomId;
+    public void setRoom_id(Integer room_id) {
+        this.room_id = room_id;
     }
 
-    public Integer getDagId() {
-        return dagId;
+    public Integer getDag_id() {
+        return dag_id;
     }
 
-    public void setDagId(Integer dagId) {
-        this.dagId = dagId;
+    public void setDag_id(Integer dag_id) {
+        this.dag_id = dag_id;
     }
 
+    public Integer getTask_id() {
+        return task_id;
+    }
+
+    public void setTask_id(Integer task_id) {
+        this.task_id = task_id;
+    }
 
     public Integer getStatus() {
         return status;
@@ -79,19 +78,19 @@ public class Resource {
         this.status = status;
     }
 
-    public Timestamp getCreateTime() {
-        return createTime;
+    public Timestamp getCreate_time() {
+        return create_time;
     }
 
-    public void setCreateTime(Timestamp createTime) {
-        this.createTime = createTime;
+    public void setCreate_time(Timestamp create_time) {
+        this.create_time = create_time;
     }
 
-    public Timestamp getLastUpdateTime() {
-        return lastUpdateTime;
+    public Timestamp getLast_update_time() {
+        return last_update_time;
     }
 
-    public void setLastUpdateTime(Timestamp lastUpdateTime) {
-        this.lastUpdateTime = lastUpdateTime;
+    public void setLast_update_time(Timestamp last_update_time) {
+        this.last_update_time = last_update_time;
     }
 }

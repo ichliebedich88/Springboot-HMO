@@ -1,5 +1,7 @@
 package com.scheduler.csheduler.SchService;
 
-public class RoomService {
+import org.springframework.stereotype.Service;
 
+@Service
+public class RoomService {
 }
