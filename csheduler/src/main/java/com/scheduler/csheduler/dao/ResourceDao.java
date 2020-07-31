@@ -1,7 +1,8 @@
 package com.scheduler.csheduler.dao;
 
-import com.scheduler.csheduler.bean.*;
-import org.apache.ibatis.annotations.*;
+import com.scheduler.csheduler.bean.Res_Room_Task;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,25 +10,9 @@ import java.util.List;
 @Repository
 @Mapper
 public interface ResourceDao {
-    @Select("select * from resource")
-    List<Resource> getAllResource();
-
-    @Select("select * from room where id = #{id}")
-    Room getRoomById(@Param("id") Integer id);
-
-    @Select("select * from room where name = #{name}")
-    Room getRoomByName(@Param("name") String name);
-
-    @Select("select * from resource where id = #{id}")
-    Resource getResourceById(@Param("id") Integer id);
-
-    @Update("update resource set type=#{type},brand=#{brand},room_id=#{roomId},name=#{name} where id=#{id}")
-    int edit(Resource resource);//编辑resource记录
-
-    @Delete("delete from resource where id=#{id}")
-    int delete(@Param("id") Integer id);
-
-    @Insert("insert into resource(id,type,brand,room_id,name) values(#{id},#{type},#{brand},#{roomId},#{name})")
-    int add_res(Resource resource);
-
+    @Select("select resource.id,resource.name,resource.type,resource.brand,resource.room_id," +
+            "room.name roomName,resource.status,task.occupy_time from resource left join room" +
+            " on resource.room_id = room.id left join task on resource.task_id=task.id")
+    //@Query(value = "select resource.id,resource.name,resource.type,resource.brand,resource.room_id,resource.status,room.name,task.occupy_time from resource left join room on resource.room_id = room.id left join task on resource.task_id=task.id",nativeQuery=true)
+    List<Res_Room_Task> getResources();
 }

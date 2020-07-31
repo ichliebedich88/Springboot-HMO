@@ -11,14 +11,6 @@ public class Task {
     private Timestamp createTime;
     private Timestamp lastUpdateTime;
 
-    public Float getOccupyTime() {
-        return occupyTime;
-    }
-
-    public void setOccupyTime(Float occupyTime) {
-        this.occupyTime = occupyTime;
-    }
-
     public Integer getId() {
         return id;
     }
@@ -49,6 +41,14 @@ public class Task {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Float getOccupyTime() {
+        return occupyTime;
+    }
+
+    public void setOccupyTime(Float occupyTime) {
+        this.occupyTime = occupyTime;
     }
 
     public Timestamp getCreateTime() {
