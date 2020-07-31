@@ -1,16 +1,29 @@
 package com.scheduler.csheduler.bean;
 
-import java.sql.Timestamp;
-
-public class Res_Room_Task {
+public class Res_Room {
     private Integer id;
     private String name;
     private String type;
     private String brand;
-    private Integer room_id;
+    private String room;
     private Integer status;
-    private String roomName;
-    private Float occupy_time;
+    private Integer task;
+
+    public String getRoom() {
+        return room;
+    }
+
+    public void setRoom(String room) {
+        this.room = room;
+    }
+
+    public Integer getTask() {
+        return task;
+    }
+
+    public void setTask(Integer task) {
+        this.task = task;
+    }
 
     public Integer getId() {
         return id;
@@ -44,14 +57,6 @@ public class Res_Room_Task {
         this.brand = brand;
     }
 
-    public Integer getRoom_id() {
-        return room_id;
-    }
-
-    public void setRoom_id(Integer room_id) {
-        this.room_id = room_id;
-    }
-
     public Integer getStatus() {
         return status;
     }
@@ -60,19 +65,5 @@ public class Res_Room_Task {
         this.status = status;
     }
 
-    public String getRoomName() {
-        return roomName;
-    }
 
-    public void setRoomName(String roomName) {
-        this.roomName = roomName;
-    }
-
-    public Float getOccupy_time() {
-        return occupy_time;
-    }
-
-    public void setOccupy_time(Float occupy_time) {
-        this.occupy_time = occupy_time;
-    }
 }

@@ -5,10 +5,10 @@ import java.sql.Timestamp;
 public class Room {
     private Integer id;
     private String name;
-    private String describe;
+    private String describ;
     private Integer status;
-    private Timestamp create_time;
-    private Timestamp last_update_time;
+    private Timestamp createTime;
+    private Timestamp lastUpdateTime;
 
     public Integer getId() {
         return id;
@@ -26,12 +26,12 @@ public class Room {
         this.name = name;
     }
 
-    public String getDescribe() {
-        return describe;
+    public String getDescrib() {
+        return describ;
     }
 
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setDescrib(String describ) {
+        this.describ = describ;
     }
 
     public Integer getStatus() {
@@ -42,19 +42,19 @@ public class Room {
         this.status = status;
     }
 
-    public Timestamp getCreate_time() {
-        return create_time;
+    public Timestamp getCreateTime() {
+        return createTime;
     }
 
-    public void setCreate_time(Timestamp create_time) {
-        this.create_time = create_time;
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
     }
 
-    public Timestamp getLast_update_time() {
-        return last_update_time;
+    public Timestamp getLastUpdateTime() {
+        return lastUpdateTime;
     }
 
-    public void setLast_update_time(Timestamp last_update_time) {
-        this.last_update_time = last_update_time;
+    public void setLastUpdateTime(Timestamp lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
     }
 }
