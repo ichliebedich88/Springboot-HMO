@@ -6,7 +6,7 @@ import java.sql.Timestamp;
 
 public class Dag {
     private Integer id;
-    private String describe;
+    private String describ;
     private Integer room_id;
     private String owner;
     private Timestamp create_time;
@@ -20,12 +20,12 @@ public class Dag {
         this.id = id;
     }
 
-    public String getDescribe() {
-        return describe;
+    public String getDescrib() {
+        return describ;
     }
 
-    public void setDescribe(String describe) {
-        this.describe = describe;
+    public void setDescribe(String describ) {
+        this.describ = describ;
     }
 
     public Integer getRoom_id() {

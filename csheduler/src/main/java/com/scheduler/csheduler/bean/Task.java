@@ -5,11 +5,19 @@ import java.sql.Timestamp;
 public class Task {
     private Integer id;
     private String name;
-    private Integer dag_id;
+    private Integer dagId;
     private String type;
-    private Float occupy_time;
-    private Timestamp create_time;
-    private Timestamp last_update_time;
+    private Float occupyTime;
+    private Timestamp createTime;
+    private Timestamp lastUpdateTime;
+
+    public Float getOccupyTime() {
+        return occupyTime;
+    }
+
+    public void setOccupyTime(Float occupyTime) {
+        this.occupyTime = occupyTime;
+    }
 
     public Integer getId() {
         return id;
@@ -27,12 +35,12 @@ public class Task {
         this.name = name;
     }
 
-    public Integer getDag_id() {
-        return dag_id;
+    public Integer getDagId() {
+        return dagId;
     }
 
-    public void setDag_id(Integer dag_id) {
-        this.dag_id = dag_id;
+    public void setDagId(Integer dagId) {
+        this.dagId = dagId;
     }
 
     public String getType() {
@@ -43,27 +51,19 @@ public class Task {
         this.type = type;
     }
 
-    public Float getOccupy_time() {
-        return occupy_time;
+    public Timestamp getCreateTime() {
+        return createTime;
     }
 
-    public void setOccupy_time(Float occupt_time) {
-        this.occupy_time = occupy_time;
+    public void setCreateTime(Timestamp createTime) {
+        this.createTime = createTime;
     }
 
-    public Timestamp getCreate_time() {
-        return create_time;
+    public Timestamp getLastUpdateTime() {
+        return lastUpdateTime;
     }
 
-    public void setCreate_time(Timestamp create_time) {
-        this.create_time = create_time;
-    }
-
-    public Timestamp getLast_update_time() {
-        return last_update_time;
-    }
-
-    public void setLast_update_time(Timestamp last_update_time) {
-        this.last_update_time = last_update_time;
+    public void setLastUpdateTime(Timestamp lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
     }
 }
